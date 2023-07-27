@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+
+html {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+#studentName,
+#studentDOB,
+#studentGender,
+#stuLang,
+#stuClass {
+  display: flex;
+}
+
+#name {
+  font-size: 16px;
+  position: relative;
+  right: -50px;
+  width: 190px;
+  outline: none;
+  border: none;
+  border-bottom: 3px solid rgba(23, 9, 18, 0.899);
+}
+
+#date {
+  font-size: 16px;
+  position: relative;
+  right: -63px;
+  width: 190px;
+  outline: none;
+  border: none;
+  border-bottom: 3px solid rgba(23, 9, 18, 0.899);
+}
+
+.male {
+  position: relative;
+  right: 2px;
+  margin-left: 40px;
+}
+
+.female {
+  position: relative;
+  margin-left: 50px;
+  right: 2px;
+}
+
+#stuLang input {
+  margin-left: 20px;
+}
+
+#stuClass select {
+  font-size: 16px;
+  margin-left: 58px;
+  width: 190px;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid rgba(23, 9, 18, 0.899);
+}
+
+button {
+  margin-top: 30px;
+  font-size: 18px;
+  width: 80px;
+  height: 40px;
+  border-radius: 50px;
+}
+
+/* button:hover {
+  cursor: pointer;
+} */
+
+#btn {
+  width: 90px;
+  height: 50px;
+  font-size: 16px;
+  background: grey;
+  border: 2px solid #333;
+  transition: all 0.4s ease-in;
+}
+#btn:hover {
+  cursor: pointer;
+  background: tomato;
+  border-color: red;
+}

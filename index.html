@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Student management</h1>
+      <form action="">
+        <div id="studentName">
+          <label for="name">Student name</label>
+          <input type="text" id="name" placeholder="student name" required />
+        </div>
+        <br />
+        <div id="studentDOB">
+          <label for="dob">Student DOB</label>
+          <input type="date" id="date" />
+        </div>
+        <br />
+
+        <div id="studentGender">
+          <label for="gender">Student gender</label>
+          <input type="radio" value="Male" name="gender" class="male" />Male
+          <input
+            type="radio"
+            value="Female"
+            name="gender"
+            class="female"
+          />Female
+        </div>
+        <br />
+
+        <div id="stuLang">
+          <label for="">Student language</label>
+          <input type="checkbox" value="English" />English
+          <input type="checkbox" value="Vietnamese" />Vietnamese
+          <input type="checkbox" value="Japanese" />Japanese
+          <input type="checkbox" value="Chinese" />Chinese
+          <input type="checkbox" value="French" />French
+        </div>
+        <br />
+
+        <div id="stuClass">
+          <label for="">Student class</label>
+          <select id="class">
+            <option value="C160BG">C160BG</option>
+            <option value="C1610L">C1610L</option>
+            <option value="C1708I">C1708I</option>
+            <option value="C1608I">C1608I</option>
+          </select>
+        </div>
+        <br />
+
+        <button type="submit" id="btn">Add</button>
+      </form>
+
+      <br />
+
+      <table id="studentTable" border="1" cellspacing="1" cellpadding="4">
+        <h1>Student list</h1>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>DOB</th>
+            <th>Gender</th>
+            <th>Languages</th>
+            <th>Class</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <p id="total"></p>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
